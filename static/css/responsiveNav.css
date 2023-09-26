@@ -1,0 +1,75 @@
+.responsiveNavigatorBar {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  transition: all 0.9s ease;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  box-shadow: 0px 2px 40px black;
+}
+.responsiveNavigatorBar i {
+  position: relative;
+}
+.responsiveNavigatorBar #navigatorUl {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  background-color: transparent;
+  border: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.responsiveNavigatorBar #navigatorUl li {
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.responsiveNavigatorBar #navigatorUl li:nth-child(1) {
+  transform: rotate(-80deg) translateY(-26px) rotate(80deg);
+  transition-delay: 0.1s;
+}
+.responsiveNavigatorBar #navigatorUl li:nth-child(2) {
+  transform: rotate(-88deg) translateY(-100px) rotate(88deg);
+  transition-delay: 0.3s;
+}
+.responsiveNavigatorBar #navigatorUl li:nth-child(3) {
+  transform: rotate(-94deg) translateY(-106px) rotate(95deg);
+  transition-delay: 0.5s;
+}
+.responsiveNavigatorBar #navigatorUl li:nth-child(4) {
+  transform: rotate(-106deg) translateY(-74px) rotate(107deg);
+  transition-delay: 0.7s;
+}
+.responsiveNavigatorBar #navigatorUl li:nth-child(5) {
+  transform: rotate(-130deg) translateY(-30px) rotate(130deg);
+  transition-delay: 0.9s;
+}
+.responsiveNavigatorBar #navigatorUl li:hover a {
+  background-image: linear-gradient(to right, #ff8a00, #e52e71);
+  text-shadow: 0px 0px 20px #ff8a00;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 0.3s ease;
+  text-decoration: none;
+}
+.responsiveNavigatorBar #navigatorUl li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  transition: text-shadow 0.9s ease;
+}/*# sourceMappingURL=responsiveNav.css.map */

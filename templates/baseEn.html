@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/33465b60d1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>{% block title %}BaseEn.Html{% endblock %}</title>
+</head>
+<body>
+    <div class="container">
+        {% block login %}{% endblock %}
+        <nav>
+            <ul>
+                <li id="tr">
+                    <a href="{% url 'index' %}">TR</a>
+                </li>
+                <li id="en">
+                    <a href="{% url 'indexEng' %}">ENG</a>
+                </li>
+            </ul>
+        </nav>
+
+         <!-- MAIN NAVIGATION BAR -->
+        <div class="navigation-bar">
+            <ul>
+                <li><a href="{% url 'project' %}">PROJECTS</a></li>
+                <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                <li><a href="{% url 'indexEng' %}">HOME</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
+            </ul>
+        </div>
+
+        <!-- RESPONSIVE NAVIGATION BAR -->
+        <div draggable="true" class="responsiveNavigatorBar">
+            <ul id="navigatorUl">
+                <li><a href="{% url 'project' %}">PROJECTS</a></li>
+                <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                <li><a href="{% url 'indexEng' %}">HOME</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
+            </ul>
+        </div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://github.com/MyMerkur" target="_blank">
+                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/do%C4%9Fukan-y%C4%B1ld%C4%B1z-64056316a" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:dogukan755@icloud.com">
+                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/dogukanyildiz_/" target="_blank">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'js/dataEn.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

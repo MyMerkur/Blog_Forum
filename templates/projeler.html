@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Projeler{% endblock %}
+
+{% block content %}
+<div class="carousel">
+    <input type="radio" name="slides" checked="checked" id="slide-1">
+    <input type="radio" name="slides" id="slide-2">
+    <input type="radio" name="slides" id="slide-3">
+    <input type="radio" name="slides" id="slide-4">
+    <input type="radio" name="slides" id="slide-5">
+    <input type="radio" name="slides" id="slide-6">
+    <ul class="carousel__slides">
+        <li class="carousel__slide">
+            <figure>
+                <div>
+                    <img src="{% static 'images/proje-1.png' %}" alt="">
+                </div>
+                <figcaption>
+                    <p>
+                        Dior Cosmetic Official Page için yapmış olduğum clone projedir.
+                    </p>
+                    <span class="credit">
+                        Kullanılan Teknolojiler:
+                        <ul>
+                            <li>HTML</li>
+                            <li>Css</li>
+                        </ul>
+                    </span>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="carousel__slide">
+            <figure>
+                <div>
+                    <img src="{% static 'images/proje-2.png' %}" alt="">
+                </div>
+                <figcaption>
+                    <p>
+                        Kendi yapmış olduğum bir E-Ticaret sitesidir. Veriler Fetch API kullanılarak Javascript
+                        üzerinden sayfa içeriği olarak yönlendirilmiştir. Kullanıcının sepetine ürün eklemek ve
+                        silebilme , eklediği ürünleri satın alabileceği özel bir alan tasarlanmıştır.
+                    </p>
+                    <span class="credit">
+                        Kullanılan Teknolojiler:
+                        <ul>
+                            <li>HTML</li>
+                            <li>Css</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </span>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="carousel__slide">
+            <figure>
+                <div>
+                    <img src="{% static 'images/proje-3.png' %}" alt="">
+                </div>
+                <figcaption>
+                    <p>Riot Game Official Page clone projemdir.</p>
+                    <span class="credit">
+                        Kullanılan Teknolojiler:
+                        <ul>
+                            <li>HTML</li>
+                            <li>Scss-Sass</li>
+                            <li>Javascript-Jquery</li>
+                        </ul>
+                    </span>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="carousel__slide">
+            <figure>
+                <div>
+                    <img src="{% static 'images/proje-4.png' %}" alt="">
+                </div>
+                <figcaption>
+                    <p>
+                        Exxen Official Page yapmış olduğum clone projemdir. Kullanıcının login & register olabilmesi
+                        dizi ve filmleri izleyebilmeleri ve erişebilmeleri üzerine yaptığım Full Stack projemdir.
+                    </p>
+                    <span class="credit">
+                        Kullanılan Teknolojiler:
+                        <ul>
+                            <li>HTML</li>
+                            <li>Scss</li>
+                            <li>Javascript</li>
+                            <li>Python-Django</li>
+                        </ul>
+                    </span>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+    <ul class="carousel__thumbnails">
+        <li>
+            <label for="slide-1"><img src="{% static 'images/proje-1.png' %}" alt=""></label>
+        </li>
+        <li>
+            <label for="slide-2"><img src="{% static 'images/proje-2.png' %}" alt=""></label>
+        </li>
+        <li>
+            <label for="slide-3"><img src="{% static 'images/proje-3.png' %}" alt=""></label>
+        </li>
+        <li>
+            <label for="slide-4"><img src="{% static 'images/proje-4.png' %}" alt=""></label>
+        </li>
+    </ul>
+</div>
+{% endblock %}

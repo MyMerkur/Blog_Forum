@@ -1,0 +1,105 @@
+{% extends "baseEn.html" %}
+{% load static %}
+{% block title %}{% endblock %}
+{% block content %}
+<section>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="{% static 'images/proje-1.png' %}" alt="">
+                        </div>
+                        <figcaption>
+                            This is a clone project I created for the Dior Cosmetic Official Page.
+                            <span class="credit">
+                                Used Technologies:
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="{% static 'images/proje-2.png' %}" alt="">
+                        </div>
+                        <figcaption>
+                            This is my own E-Commerce website. Data is fetched using Fetch API and the page content is dynamically generated using JavaScript. Users can add and remove items from their cart, and a special section is designed for purchasing items.
+                            <span class="credit">
+                                Used Technologies:
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="{% static 'images/proje-3.png' %}" alt="">
+                        </div>
+                        <figcaption>
+                            This is a clone project of the Riot Games Official Page.
+                            <span class="credit">
+                                Used Technologies:
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>SCSS-Sass</li>
+                                    <li>JavaScript-JQuery</li>
+                                </ul>
+                            </span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="{% static 'images/proje-4.png' %}" alt="">
+                        </div>
+                        <figcaption>
+                            This is a clone project I created for the Exxen Official Page. It's a Full Stack project that allows users to log in, register, watch movies and series, and access special content.
+                            <span class="credit">
+                                Used Technologies:
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Python-Django</li>
+                                </ul>
+                            </span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-1"><img src="{% static 'images/proje-1.png' %}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-2"><img src="{% static 'images/proje-2.png' %}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-3"><img src="{% static 'images/proje-3.png' %}" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-4"><img src="{% static 'images/proje-4.png' %}" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

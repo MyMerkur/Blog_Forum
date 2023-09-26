@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "content": "JavaScript is the key to the web development world for me. I have worked on numerous projects, and it's a fantastic language because it runs in the browser, enhancing the user experience. I prefer using JS to add interactive features, make web applications more appealing, and create rapid prototypes.",
+        "src": "../static/images/javascript.webp",
+        "category": "The Future with JavaScript"
+    },
+    {
+        "id": 2,
+        "content": "TypeScript is a language that helps me reduce errors in my software projects and makes my code more secure. Its strong static typing system on top of JavaScript provides a better development experience for large and complex projects. I prefer using TypeScript because it is compatible with the JavaScript ecosystem and improves code readability.",
+        "src": "../static/images/type.svg",
+        "category": "The Future with JavaScript"
+    },
+    {
+        "id": 3,
+        "content": "React is a revolution for me in the field of user interface development. Throughout my career, I have worked on many large and complex projects, and React's component-based structure and reusability of components have helped me rapidly expand my projects. Therefore, React is my top choice.",
+        "src": "../static/images/react.svg",
+        "category": "The Future with JavaScript"
+    },
+    {
+        "id": 4,
+        "content": "Python is a language I frequently turn to at various stages of my career. It is ideal for both artificial intelligence projects and data analysis. Its clean and understandable syntax allows me to quickly develop projects.",
+        "src": "../static/images/python.svg.png",
+        "category": "The Future with JavaScript"
+    },
+    {
+        "id": 5,
+        "content": "Java is a powerful tool for developing large and reliable applications. I have worked on scalable projects in my career, and Java's portability and performance have always been a feature I can rely on.",
+        "src": "../static/images/java.svg",
+        "category": "The Future with JavaScript"
+    },
+    {
+        "id": 6,
+        "content": "Node.js brings the advantages of using JavaScript on the server-side, providing speed and scalability. It allows me to quickly develop and scale network applications.",
+        "src": "../static/images/nodeJs.svg",
+        "category": "The Future with JavaScript"
+    }
+]

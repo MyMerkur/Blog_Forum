@@ -1,0 +1,146 @@
+.login-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #nickName {
+            background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+}
+
+.login-box{
+    span{
+        padding: 9px;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            &:hover{
+                background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+}
+.blog_content{
+    .in_blog_search{
+        input{
+            border: 1px solid black;
+            border-radius: 12px;
+            padding: 10px;
+             &:focus{
+            outline: none;
+        }
+        }
+       
+    }
+    .share_message{
+        display: flex;
+        justify-content: center;
+        form{
+            display: flex;
+            width: 50%;
+        }
+        #message{
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            border: 4px solid black;
+            border-radius: 22px;
+            text-transform: capitalize;
+            &:focus{
+                outline: none;
+            }
+        }
+        #share{
+            border: 0;
+            border-radius: 22px;
+            width: 30%;
+            background: linear-gradient(to right,#e52e71, #ff8a00);
+            text-align: center;
+            padding: 0;
+        }
+    }
+    .streaming_new_message{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            border-radius: 18px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .user_shared_message{
+                .avatar{
+                    span{
+                        background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
+                .comments{
+                    padding-left: 25px;
+                }
+            }
+            .post_buttons{
+                display: flex;
+                width: 14%;
+                align-items: center;
+                #edit_form{
+                   width: 100%;
+                }
+                #social_form{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                button{
+                    background: transparent;
+                    border: 0;
+                    padding: 0;
+                    i{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .comment_form{
+                display: none;
+            }
+    }
+    .instructions{
+            form{
+                display: flex;
+                justify-content: flex-end;
+                button{
+                    background: transparent;
+                    border: 0;
+                    i{
+                       font-size: 2rem;
+                    }
+                }
+            }
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    #share_blog_post{
+        width: 100%;
+    }
+}

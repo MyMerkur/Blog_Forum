@@ -1,0 +1,129 @@
+.login-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+}
+.user-info span a {
+  text-decoration: none;
+  color: black;
+}
+.user-info span #nickName {
+  background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.login-box span {
+  padding: 9px;
+}
+.login-box span a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+.login-box span a:hover {
+  background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.blog_content .in_blog_search input {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px;
+}
+.blog_content .in_blog_search input:focus {
+  outline: none;
+}
+.blog_content .share_message {
+  display: flex;
+  justify-content: center;
+}
+.blog_content .share_message form {
+  display: flex;
+  width: 50%;
+}
+.blog_content .share_message #message {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 22px;
+  text-transform: capitalize;
+}
+.blog_content .share_message #message:focus {
+  outline: none;
+}
+.blog_content .share_message #share {
+  border: 0;
+  border-radius: 22px;
+  width: 30%;
+  background: linear-gradient(to right, #e52e71, #ff8a00);
+  text-align: center;
+  padding: 0;
+}
+.blog_content .streaming_new_message {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.blog_content .streaming_new_message .user_shared_message .avatar span {
+  background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.blog_content .streaming_new_message .user_shared_message .comments {
+  padding-left: 25px;
+}
+.blog_content .streaming_new_message .post_buttons {
+  display: flex;
+  width: 14%;
+  align-items: center;
+}
+.blog_content .streaming_new_message .post_buttons #edit_form {
+  width: 100%;
+}
+.blog_content .streaming_new_message .post_buttons #social_form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.blog_content .streaming_new_message .post_buttons button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+.blog_content .streaming_new_message .post_buttons button i {
+  font-size: 1.2rem;
+}
+.blog_content .streaming_new_message .comment_form {
+  display: none;
+}
+.blog_content .instructions form {
+  display: flex;
+  justify-content: flex-end;
+}
+.blog_content .instructions form button {
+  background: transparent;
+  border: 0;
+}
+.blog_content .instructions form button i {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  #share_blog_post {
+    width: 100%;
+  }
+}/*# sourceMappingURL=blog.css.map */

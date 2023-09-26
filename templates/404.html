@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}404{% endblock %}
+
+{% block content %}
+<div class="error_container">
+	<div id="notfound">
+	<div class="notfound">
+		<div class="notfound-404">
+			<h1>Oops!</h1>
+		</div>
+		<h2>404 - Böyle Bir Sayfamız Mevcut Değil</h2>
+		<p>Aradığınız sayfa, değiştirilmiş veya geçici olarak kullanılamıyor olabilir.</p>
+		<a href="{% url 'index' %}">Anasayfa</a>
+	</div>
+</div>
+</div>
+
+{% endblock %}
+
+
+

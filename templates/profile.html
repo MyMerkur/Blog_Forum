@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Profil {{ user.get_full_name|title }} {% endblock %}
+
+{% block login %}
+{% if user.is_authenticated %}
+        <div class="user-info">
+            <span>
+                <a id="nickName" href="{% url 'profile' %}">{{ user.get_full_name|title }} </a>
+                <b>Hoşgeldiniz</b>
+            </span>
+            <span>
+                <a href="{% url 'logout' %}">Çıkış Yap</a>
+            </span>
+        </div>
+{% else %}
+        <div class="login-box">
+            <span>
+                <a href="{% url 'login' %}">Giriş Yap</a>
+            </span>
+            <span>
+                <a href="{% url 'register' %}">Kaydol</a>
+            </span>
+        </div>
+{% endif %}
+   
+
+
+{% endblock %}
+{% block content %}
+
+    <div class="profile">
+        <div class="userInfo">
+            <div class="user_information">
+
+                <div>
+                    <h3>Ad Soyad :</h3>
+                    <p>{{ user.get_full_name }}</p>
+                </div>
+
+                <div>
+                    <h3>Mail :</h3>
+                    {{ user.email }}
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

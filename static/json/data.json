@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "content":"JavaScript, benim için web geliştirme dünyasının anahtarı. Sayısız projede çalıştım ve tarayıcıda çalıştığı için kullanıcı deneyimini geliştirmek için harika bir dil. İnteraktif özellikler eklemek, web uygulamalarını daha çekici hale getirmek ve hızlı prototipler oluşturmak için JS'yi tercih ediyorum.",
+        "src":"static/images/javascript.webp",
+        "category":"Javascript İle Gelecek"
+    },
+    {
+        "id":2,
+        "content":"TypeScript, yazılım projelerimdeki hataları azaltmama ve kodumun daha güvenli olmasını sağlayan bir dil. JavaScript'in üstüne güçlü bir statik tip sistemini eklemesi, büyük ve karmaşık projelerde daha iyi bir geliştirme deneyimi sunuyor. Hem JavaScript ekosistemiyle uyumlu olması hem de kodun okunabilirliğini artırması nedeniyle, projelerimde TS kullanmayı tercih ediyorum.",
+        "src":"static/images/type.svg",
+        "category":"Javascript İle Gelecek"
+    },
+    {
+        "id":3,
+        "content":"React, benim için kullanıcı arayüzü geliştirme alanında bir devrim. Kariyerim boyunca birçok büyük ve karmaşık proje üzerinde çalıştım ve React'in komponent tabanlı yapısı ve bileşenlerin yeniden kullanılabilirliği, projelerimi hızla büyütmeme yardımcı oldu. Bu nedenle React, benim için birinci tercih.",
+        "src":"static/images/react.svg",
+        "category":"Javascript İle Gelecek"
+    },
+    {
+        "id":4,
+        "content":"Python, kariyerimin çeşitli aşamalarında sık sık başvurduğum bir dil. Hem yapay zeka projeleri hem de veri analizi için ideal. Özellikle temiz ve anlaşılır sözdizimi, projelerimi hızla geliştirmemi sağlıyor.",
+        "src":"static/images/python.svg.png",
+        "category":"Javascript İle Gelecek"
+    },
+    {
+        "id":5,
+        "content":"Java, büyük ve güvenilir uygulamalar geliştirmek için güçlü bir araçtır. Kariyerimde ölçeklenebilir projeler üzerinde çalıştım ve Java'nın taşınabilirliği ve performansı, her zaman güvendiğim bir özellik olmuştur.",
+        "src":"static/images/java.svg",
+        "category":"Javascript İle Gelecek"
+    },
+    {
+        "id":6,
+        "content":"Node.js, sunucu tarafında JavaScript kullanmanın hız ve ölçeklenebilirlik açısından avantajlarını yaşadım. Ağ uygulamalarını hızlıca geliştirmeme ve ölçeklememe olanak tanıyor.",
+        "src":"static/images/nodeJs.svg",
+        "category":"Javascript İle Gelecek"
+    }
+]

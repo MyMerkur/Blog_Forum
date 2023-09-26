@@ -1,0 +1,43 @@
+{% extends "baseEn.html" %}
+{% load static %}
+
+{% block title %}{% endblock %}
+{% block content %}
+    <!-- Class names and containers to be adjusted -->
+    <div class="cont">
+        <div class="containerContact" id="containerContact">
+
+            <div class="form-container sign-in-container">
+                <div class="contact">
+                    <h1>Follow Me</h1>
+                    <div class="social-container">
+                        <a href="https://github.com/MyMerkur" target="_blank" class="social"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
+                        <a href="mailto:ardahan7572@gmail.com" target="_blank" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="https://www.linkedin.com/in/do%C4%9Fukan-y%C4%B1ld%C4%B1z-64056316a" target="_blank" class="social"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></a>
+                    </div>
+                    <span>Download CV</span>
+                    <!-- The part for downloading CV will be handled in the backend -->
+                    <button class="ghost" id="download">Download</button>
+                </div>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>You Are Redirected for a Message</h1>
+                        <button class="ghost" id="signIn">Contact Area</button>
+                    </div>
+
+                    <div class="overlay-panel overlay-right">
+                        <h1>Or Send Me a Message</h1>
+                        <a href="mailto:dogukan755@icloud.com?subject=Subject&body=Hello Doğukan.">
+                            <button class="ghost" id="signUp">Send Message</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+

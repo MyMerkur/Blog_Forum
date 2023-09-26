@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Anasayfa{% endblock %}
+
+{% block content %}
+ <main>
+            <section>
+
+                <div class="mylogo">
+                    <img src="{% static 'images/logo.png' %}" alt="logo">
+                </div>
+               
+                <div class="main-profile">
+                    <h2>
+                        Merhaba Ben Doğukan Yıldız.
+                    </h2>
+                    <h4>
+                        Ben bir Full Stack Web Developer'ım ve 2 yıllık birikimim , Tasarım konusundaki tutkum ve yaratıcı çözümler üretme isteğimle her proje için benzersiz bir yaklaşım sunuyorum...
+                    </h4>
+                </div>
+            </section>
+        </main>
+
+        <div class="siteMain">
+            <i id="arrowDown" class="fa-sharp fa-regular fa-angles-down fa-fade fa-2xl" style="color: #000000;"></i>
+            
+        </div>
+
+        <div class="upBtn">
+            <i class="fa-solid fa-angle-up fa-beat-fade"></i>
+        </div>
+
+{% endblock %} 

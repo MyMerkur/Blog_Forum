@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Blog{% endblock %}
+
+{% block login %}
+{% if user.is_authenticated %}
+<div class="user-info">
+    <span>
+        <a id="nickName" href="{% url 'profile' %}">{{ user.get_full_name|title }} </a>
+        <b>Hoşgeldiniz</b>
+    </span>
+    <span>
+        <a href="{% url 'logout' %}">Çıkış Yap</a>
+    </span>
+</div>
+{% else %}
+<div class="login-box">
+    <span>
+        <a href="{% url 'login' %}">Giriş Yap</a>
+    </span>
+    <span>
+        <a href="{% url 'register' %}">Kaydol</a>
+    </span>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<div class="blog_content">
+    <div class="share_message">
+        <form id="share_blog_post" method="POST" action="{% url 'share_blog_post' %}">
+            {% csrf_token %}
+            <input type="text" id="message" name="message" placeholder="{{ user.get_full_name|title }} olarak bir mesaj paylaş...">
+            <button type="submit" id="share">Gönder</button>
+        </form>
+    </div>
+    <div class="in_blog_search">
+        <input id="search" type='text' name='' placeholder='Aramak İstediğiniz Konu ?'>
+        <i id="searchBtn" class="fas fa-search"></i>
+    </div>
+    <div class="streaming">
+        {% for entry in blog_entries %}
+        <div class="streaming_new_message">
+            <div class="user_shared_message">
+                <div class="avatar">
+                    <span>{{ entry.author.get_full_name|title }}</span>
+                </div>
+                <div class="user_text">
+                    {{ entry.content }}
+                </div>
+                <div class="created_at">
+                    <small>
+                        {{ entry.created_at }}
+                    </small>
+                </div>
+
+                <div class="comments">
+                    {% for comment in entry.comments.all %}
+                    <div class="comment">
+                        <div class="avatar">
+                            <span>{{ comment.author.get_full_name|title }}</span>
+                        </div>
+                        <div class="comment_text">
+                            {{ comment.text }}
+                        </div>
+                        <div class="comment_created_at">
+                            {{ comment.created_at }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="comment_form">
+                    <form method="POST" action="{% url 'add_comment' entry.id %}">
+                        {% csrf_token %}
+                        <textarea id="comment" name="comment" placeholder="Yorumunuzu buraya girin..."></textarea>
+                        <button type="submit">Yorum Yap</button>
+                    </form>
+                </div>
+            </div>
+            <div class="post_buttons">
+                {% if user.is_authenticated %}
+                    {% if user == entry.author %}
+                        <!-- Sadece kullanıcı kendi yorumunu düzenleyebilir -->
+                        <form method="POST" id="edit_form" action="{% url 'edit_blog_post' entry.id %}">
+                            {% csrf_token %}
+                            <button type="submit" id="Edit">
+                                <i class="fa-solid fa-edit" style="color: #000000;"></i>
+                            </button>
+                        </form>
+                    {% endif %}
+                    {% if user.is_superuser %}
+                        <!-- Sadece admin yorumu silebilir -->
+                        <form method="POST" action="{% url 'delete_blog_post' entry.id %}">
+                            {% csrf_token %}
+                            <button type="submit" id="Delete">
+                                <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                            </button>
+                        </form>
+                    {% endif %}
+                {% endif %}
+                <form method="POST" id="social_form">
+                    <button type="button" class="comment-button" id="Comment">
+                        <i class="fa-solid fa-comment" style="color: #000000;"></i>
+                    </button>
+                </form>
+            </div>
+            <!--entrynin içeriği burada sonlanıyor -->
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+{% if not user.is_authenticated %}
+<h1>Kaydolmadan Mesajları Göremezsiniz</h1>
+{% endif %}
+{% endblock %}

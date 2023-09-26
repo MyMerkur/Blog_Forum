@@ -1,0 +1,9 @@
+.profile {
+  height: 500px;
+}
+.profile .userInfo .user_information h3 {
+  font-size: 1rem;
+}
+.profile .userInfo .user_information p {
+  font-size: 1.3rem;
+}/*# sourceMappingURL=profile.css.map */

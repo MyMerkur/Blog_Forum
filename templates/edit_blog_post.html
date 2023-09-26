@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Yorum Düzenle{% endblock %}
+
+{% block content %}
+<div class="edit-blog-post">
+    <h2>Yorumu Düzenle</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <textarea id="new_content" name="new_content" rows="4" cols="50">{{ blog_post.content }}</textarea>
+        <br>
+        <button type="submit">Kaydet</button>
+    </form>
+</div>
+{% endblock %}
