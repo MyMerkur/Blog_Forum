@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+{% block title %}{% endblock %}
+
+{% block content %}
+    <div class="about">
+        <div class="innerSiteMain">
+            <div class="profilePhotos">
+                <img src="{% static 'images/Unknown.png' %}" alt="profilePhoto">
+            </div>
+
+            <div class="about-me">
+                <h1>Merhaba</h1>
+                <h3>
+                    Ben Doğukan Yıldız. 1997 yılında Ardahan'da doğdum ve hayatım boyunca
+                    farklı alanlarda deneyim kazanmaya büyük bir tutkuyla yaklaştım.
+                    Eğitim ve kariyer yolculuğumun birkaç önemli durağını sizlerle paylaşmak istiyorum.
+                </h3>
+            </div>
+
+        </div>
+
+        <div class="siteContent">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="innerSiteContent">
+                <h4>
+                    Lisans eğitimimi Ardahan Üniversitesi'nde Beden Eğitimi ve Spor Öğretmenliği
+                    bölümünde tamamladım. Aynı zamanda, daha önce aldığım yazılım eğitimleri ile
+                    bilgisayar ve teknoloji konularına olan ilgimi pekiştirdim.
+                </h4>
+                <img src="{% static 'images/univercity.jpeg' %}" alt="univercity">
+            </div>
+
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="innerSiteContent">
+                <img src="{% static 'images/repairPc.jpg' %}" alt="work">
+                <h4>
+                    Uzun yıllar boyunca, bilgisayar donanımları konusunda
+                    Aydın Bilgisayar/Mersin'de çalıştım. Bu süreç, 15-19 yaşları
+                    arasındaki gençlik yıllarımda gerçekleşti ve bilgisayar teknolojisiyle
+                    içli dışlı olma yolculuğumun temelini attı.
+                </h4>
+            </div>
+
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="innerSiteContent">
+                <h4>
+                    2022 yılında yazılım sektörüne adım attım ve Front-End
+                    Developer olarak Ankara-Neos Yazılım Akademisi'nde 6 ay
+                    boyunca çalıştım. Bu süre zarfında, modern web teknolojileriyle tanıştım,
+                    kullanıcı dostu arayüzler geliştirdim ve projelerde aktif olarak yer aldım.
+                    Bu deneyimler, yazılım dünyasındaki yeteneklerimi geliştirmem konusunda
+                    büyük bir katkı sağladı.
+                </h4>
+                <img src="{% static 'images/coding.jpg' %}" alt="coding">
+            </div>
+
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="innerSiteContent">
+                <img src="{% static 'images/education.jpg' %}" alt="education">
+                <h4>
+                    Kendimi daha fazla geliştirmek ve teknoloji dünyasında
+                    daha etkin bir rol oynamak amacıyla 2023 yılında Bilgisayar
+                    Programcılığı bölümüne başladım. Bilgisayar programcılığına
+                    olan merakım ve sürekli araştırma eğilimim, yazılım sektöründeki
+                    yükselişime büyük katkı sağlıyor.
+                </h4>
+            </div>
+
+
+
+        </div>
+    </div>
+{% endblock %}

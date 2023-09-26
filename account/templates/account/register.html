@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Kaydol {% endblock %}
+
+{% block content %}
+
+<div id="register_container" class="col">
+    <h1>Kaydol</h1>
+    <hr>
+
+    <form method="POST" id="register_post">
+        {% csrf_token %}
+        {% if error %}
+            <div class="alert alert-danger">
+                {{error}}
+            </div>
+        {% endif %}
+        <div class="mb-3">
+            <label for="username" class="form-label">Kullanıcı Adı</label>
+            <input type="text" class="form-control" name="username" value="{{ username }}">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" value="{{ email }}">
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                 <label for="firstname" class="form-label">Adınız</label>
+                <input type="text" class="form-control" name="firstname" value="{{ firstname }}">
+            </div>
+            <div class="col">
+                <label for="lastname" class="form-label">Soyadınız</label>
+            <input type="text" class="form-control" name="lastname" value="{{ lastname }}"> 
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                 <label for="password" class="form-label">Şifre</label>
+                <input type="password" class="form-control" name="password">    
+            </div>
+            <div class="col">
+                <label for="repassword" class="form-label">Şifre Tekrar</label>
+                <input type="password" class="form-control" name="repassword">
+            </div>
+        </div>
+        
+      
+        <div class="mb-3"></div>
+
+        <input type="submit" value="Register" class="btn btn-dark">
+    </form>
+
+</div>
+
+{% endblock %}

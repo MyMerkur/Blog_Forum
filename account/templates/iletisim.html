@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}İletişim{% endblock %}
+
+
+{% block content %}
+ <!-- Class isimleri ve containerlar düzenlenecek -->
+ <div class="cont">
+    <div class="containerContact" id="containerContact">
+
+<div class="form-container sign-in-container">
+    <div class="contact">
+        <h1>Beni Takip Et</h1>
+        <div class="social-container">
+            <a href="#" class="social"><i class="fa-brands fa-github" style="color: #000000;"></i>    </a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fa-brands fa-linkedin" style="color: #000000;"></i> </a>
+        </div>
+        <span>CV İndir</span>
+        <!-- Cv indirilecek kısım backend'de yapılacak -->
+        <button class="ghost" id="download">İndir</button>
+    </div>
+</div>
+<div class="overlay-container">
+    <div class="overlay">
+        <div class="overlay-panel overlay-left">
+            <h1>Mesaj İçin Yönlendirildiniz</h1>
+            <button class="ghost" id="signIn">İletişim Alanı</button>
+        </div>
+
+        <div class="overlay-panel overlay-right">
+            <h1>Ya da Bana Bir Mesaj Gönder</h1>
+            <a href="mailto:dogukan755@icloud.com?subject=Konu&body=Merhaba Doğukan."> 
+                <button class="ghost" id="signUp">Mesaj Gönder</button>
+            </a>
+            
+        </div>
+    </div>
+</div>
+</div>
+   </div>
+{% endblock %}
