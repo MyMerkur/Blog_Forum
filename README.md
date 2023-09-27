@@ -61,3 +61,4 @@ To run the project on your local machine, follow these steps:
 ### Usage
 
 After starting the project, you can use the blog and forum features by visiting `http://localhost:8000` in your browser.
+![Ekran Resmi 2023-09-27 11 39 43](https://github.com/MyMerkur/Blog_Forum/assets/116354050/ec28eab3-90de-4ecd-a379-eafc072528a1)
